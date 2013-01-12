@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Next train</title>
+    <!-- Bootstrap -->
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="row">
+      <div class="span12 offset1">
+        <h2>Next train expected: {{ train_time }} <small>In {{ minutes_to }} minutes</small></h2>
+        <h3>The train is: {{ status }}</h3>
+      </div>
+    </div>
+  </body>
+</html>
